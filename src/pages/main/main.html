@@ -1,0 +1,42 @@
+<!--
+  Generated template for the Main page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content class = "full darker-blue-gradient">
+<ion-slides [options]="{onlyExternal: true}">    
+<!---multiple form  for one page form-->
+<ion-slide class = "overall" >
+<div class = " largediv "><span class = "span"><div class = "div  nema2"></div></span><div class = "names">NEMA</div><div class = "lter pad">Report A situation, you can leave location on so we can track you incase of emergency..</div></div>
+<div class = " bluedv " (click) = "msg('Report Natural Disasters And Hazards','disaster');"><div class = "left"><i class = "fa fa-microphone"></i> </div><div class = "right"><div class = "white">Natural Disasters And Hazards</div><div class = "light truncate">Rock Fall, Land slides, wild fire, Earth Tremor</div></div><div class = "rg"><i class = "fa fa-angle-right"></i></div></div>
+<div class = " bluedv "  (click) = "msg('Report crime and terrorism', 'terrorism');"><div class = "left"><i class = "fa fa-user-secret"></i> </div><div class = "right"><div class = "white">Crime and Terrorism</div><div class = "light truncate">Bomb Blast, Armed Robbery, Kidnapping, </div></div><div class = "rg"><i class = "fa fa-angle-right"></i></div></div>
+<div class = " bluedv "  (click) = "msg('Report Pollution','pollution');"><div class = "left"><i class = "fa fa-recycle"></i> </div><div class = "right"><div class = "white">Pollution</div><div class = "light truncate">Radioactive radiation, waterpollution, unsustainable waste management, Air polution</div></div><div class = "rg"><i class = "fa fa-angle-right"></i></div></div>
+<div class = " bluedv range"  (click) = "msg('Report Accoidents','accidents');"><div class = "left"><i class = "fa fa-wheelchair"></i> </div><div class = "right"><div class = "white">Accidents</div><div class = "light truncate">Motor Accidents, Bikes, Plane Crashes ETC.</div></div>
+<div class = "rg"><i class = "fa fa-angle-right"></i></div></div>
+</ion-slide>
+<ion-slide class = "overall">  
+<div class = "foot"><span class = "fot">Nema-Mobile</span><i class = "i fa fa-battery-full fr wht "></i></div>
+<div class = "whitebox">
+ <div class = "top"><i class = " i fa fa-arrow-left col33 " (click) = "gotobar(0)"></i><i class = " i fa fa-globe col33"></i> <i class = " i fa fa-envelope-o col33 "></i> <i class = " i fa fa-close col33 "  (click) = "gotobar(0)"></i> </div>
+ <div class = "rightup">
+   <div class = "txtop">{{topmessage}}</div>
+   <div class = "txt">
+     <textarea rows = "9" placholder = "Comment on reports here" [(ngModel)] = "model"></textarea>
+   </div>
+ <div class = "btns">
+   <div class = "btn btnwhite fr" (click) = "postmes()"><i class = "fa fa-map-marker"></i> Post</div>
+   <div class = "btn btnblue fr" (click) = "clear()"><i class = "fa fa-close"></i> Delete</div>
+ </div>
+ </div>
+ <div *ngIf = "msgs.length > 0">
+ <div class = "commentup" *ngFor = "let i of msgs">
+   <div class = "white blue ff">{{date}}</div>
+   <div class = "light gray f"> {{i}}</div>
+ </div>
+</div>
+</div>
+
+</ion-slide>
+</ion-slides>
+</ion-content>

@@ -1,0 +1,388 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/v2/theming/
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
+
+$text-color:        #000;
+$background-color:  #fff;
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    #387ef5,
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222
+);
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/v2/ionicons/
+
+$ionicons-font-path: "../assets/fonts";
+@import "ionicons";
+//@import "../assets/fonts/font-awesome.min.css";
+@import "./scss/font-awesome";
+ @font-face { font-family: 'FontAwesome'; src: url('../assets/fonts/fontawesome-webfont.eot?v=#{$fa-version}');
+src: url('../assets/fonts/fontawesome-webfont.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
+url('../assets/fonts/fontawesome-webfont.woff2?v=#{$fa-version}') format('woff2'),
+url('../assets/fonts/fontawesome-webfont.woff?v=#{$fa-version}') format('woff'),
+url('../assets/fonts/fontawesome-webfont.ttf?v=#{$fa-version}') format('truetype'),
+url('../assets/fonts/fontawesome-webfont.svg?v=#{$fa-version}#fontawesomeregular') format('svg'); font-weight: normal; font-style: normal; }
+//@import "font-awesome";
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lobster"), local("Lobster-Regular"), url(../assets/fonts/NIaFDq6p6eLpSvtV2DTNDQLUuEpTyoUstqEm5AMlJo4.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url(../assets/fonts/DXI1ORHCpsQm3Vp6mXoaTSEYW5qDv9pYXJoBt69ZZ-Y.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(../assets/fonts/LWCjsQkB6EMdfHrEVqA1KbO3LdcAZYWl9Si6vvxL-qU.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(../assets/fonts/MTP_ySUJH_bn48VBG8sNSiEYW5qDv9pYXJoBt69ZZ-Y.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local("Open Sans Light Italic"), local("OpenSansLight-Italic"), url(PRmiXeptR36kaC0GEAetxqznFiSPfPJ_YWSJRsCffq4.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local("Open Sans Italic"), local("OpenSans-Italic"), url(../assets/fonts/xjAJXh38I15wypJXxuGMBvWu6OGxuLGzY4LKhhs6ySg.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto Condensed"), local("RobotoCondensed-Regular"), url(../assets/fonts/Zd2E9abXLFGSr9G3YK2MsMeg0GDLT3gdnfcaNspMiAs.woff) format("woff"); }
+
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local("Lato Hairline"), local("Lato-Hairline"), url(../assets/fonts/eFRpvGLEW31oiexbYNx7Y_esZW2xOQ-xsNqO47m55DA.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local("Lato Hairline"), local("Lato-Hairline"), url(../assets/fonts/GtRkRNTnri0g82CjKnEB0Q.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Lato Light"), local("Lato-Light"), url(../assets/fonts/dPJ5r9gl3kK6ijoeP1IRsvY6323mHUZFJMgTvxaG2iE.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Lato Light"), local("Lato-Light"), url(../assets/fonts/EsvMC5un3kjyUhB9ZEPPwg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url(../assets/fonts/UyBMtLsHKBKXelqf4x7VRQ.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url(../assets/fonts/1YwB1sO8YE1Lyjf12WNiUA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+/* latin-ext */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Dosis Light"), local("Dosis-Light"), url(../assets/fonts/SHQzTQBI7152hSrIuGUiVBTbgVql8nDJpwnrE27mub0.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Dosis Light"), local("Dosis-Light"), url(../assets/fonts/7aJzV14HzAOiwNTiPgucGfesZW2xOQ-xsNqO47m55DA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+/* latin-ext */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Dosis Regular"), local("Dosis-Regular"), url(../assets/fonts/RlBXAIuiO5GvH9-0-JbBlw.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Dosis Regular"), local("Dosis-Regular"), url(../assets/fonts/4hYyXH_8WmbBLamf6WjLwg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+/* latin-ext */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Dosis Medium"), local("Dosis-Medium"), url(../assets/fonts/NI3uVO_o2Ursx6Z1Lyy3oRTbgVql8nDJpwnrE27mub0.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Dosis Medium"), local("Dosis-Medium"), url(../assets/fonts/mAcLJWdPWDNiDJwJvcWKc_esZW2xOQ-xsNqO47m55DA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+/* latin-ext */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Dosis SemiBold"), local("Dosis-SemiBold"), url(../assets/fonts/yeSIYeveYSpVN04ZbWTWghTbgVql8nDJpwnrE27mub0.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Dosis SemiBold"), local("Dosis-SemiBold"), url(../assets/fonts/O6SOu9hYsPHTU43R17NS5fesZW2xOQ-xsNqO47m55DA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+/* latin-ext */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Dosis Bold"), local("Dosis-Bold"), url(../assets/fonts/fP7ud4UTUWGxo-nV1joC1RTbgVql8nDJpwnrE27mub0.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Dosis Bold"), local("Dosis-Bold"), url(../assets/fonts/22aDRG5X9l7obljtz7tihvesZW2xOQ-xsNqO47m55DA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+/* latin-ext */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 800;
+  src: local("Dosis ExtraBold"), local("Dosis-ExtraBold"), url(../assets/fonts/NL7tQp6ch38l_aQukeablRTbgVql8nDJpwnrE27mub0.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 800;
+  src: local("Dosis ExtraBold"), local("Dosis-ExtraBold"), url(../assets/fonts/nq3OPeKr7RUSF_YDJ1woxvesZW2xOQ-xsNqO47m55DA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+$lightblue1: #58CDEC;
+$lightblue2: #36A8DB; 
+$lightblue3:#3899CE;
+$lightblue4: #3B6CA7;
+$orange1:#E5720C;
+$orange2:#BF3C08;
+$orange3:#B02506;
+$yellow1:#E7A213;
+$yellow2:#F2D71A;
+$yellow3:#F2D71A;
+$SIDEMENU_TRANSPARENCY: rgba(255,255,255,0.4);
+.light-blue-gradient{
+    background: -webkit-gradient( top, $lightblue1, $lightblue3);
+    background: -o-linear-gradient(bottom , $lightblue1, $lightblue3);
+    background: -moz-linear-gradient(bottom , $lightblue1,$lightblue3);
+    background: linear-gradient(to bottom , $lightblue1, $lightblue3);
+}
+.darker-blue-gradient{
+    background: -webkit-gradient( top, $lightblue2, $lightblue4);
+    background: -o-linear-gradient(bottom , $lightblue2, $lightblue4);
+    background: -moz-linear-gradient(bottom , $lightblue2,$lightblue4);
+    background: linear-gradient(to bottom , $lightblue2, $lightblue4);
+}
+.orange-gradient{
+    background: -webkit-gradient( top, $orange1, $orange2 $orange3);
+    background: -o-linear-gradient(bottom , $orange1, $orange2 $orange3);
+    background: -moz-linear-gradient(bottom , $orange1, $orange2 $orange3);
+    background: linear-gradient(to bottom ,$orange1, $orange2 $orange3);
+}
+html, body, .md{background-color:#ededed!important;}
+.full{ height:100%; width:100%; min-width:200px; padding-top:20px; min-height:208px;  box-sizing:border-box; padding:0px; overflow-y:scroll;}
+
+
+.coverbx{
+-webkit-box-shadow: 0px 4px 45px -1px rgba(0,0,0,0.6);
+-moz-box-shadow: 0px 4px 45px -1px rgba(0,0,0,0.6);
+box-shadow: 0px 4px 45px -1px rgba(0,0,0,0.6);
+}
+
+/*reponsive.................................................................................................................................. */
+input[type="password"]{
+  font-family:Verdana,sans-serif;
+  
+  font-size:25px;
+}
+*:focus {
+    outline: none;
+}
+input, textarea{
+
+    outline: none;
+
+}
+.inline-block{display:inline-block;}
+
+::-webkit-input-placeholder {
+  color: #d2d2d2; text-align:left; font-size:15px!important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #d2d2d2;   text-align:left; font-size:15px!important; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #d2d2d2;  text-align:left; font-size:15px!important;
+}
+
+:-ms-input-placeholder {  
+   color: #d2d2d2;  text-align:left; font-size:15px!important;
+}
+.fixed-content, .scroll-content{box-sizing:border-box; overflow-x:hiddn;}
+
+@media only screen
+and (min-width : 1025px) { /* Desktop */
+.pc{display:inherit!important;} .tb{display:none!important;} .lg{display:inherit!important;} .mb{display:none!important;}
+.pc{display:inherit!important;}
+.nopc{display:none!important;}
+.full{width:512px; min-height:250px; position:absolute; left:50%; margin-left:-256px; display:block;  overflow-x:hidden;}
+/*forms */
+
+}
+/*......................desktop ends..................*/
+/*.......................mobile.....................*/
+@media only screen
+and (min-device-width : 320px) 
+
+and (max-device-width : 480px) {/*mobile*/
+/*.col-xs{margin:0px;}*/
+.mb{display:none!important;} .tb{display:none!important;} .lg{display:none!important;} .pc{display:none!important;} .pconly{display:none;}
+.mb{display:inherit!important;}
+.nomb{display:none!important;}
+
+
+}
+/*...............mobile ends..........................*/
+/*................................tabs......................*/
+@media only screen
+and (min-device-width : 481px) 
+and (max-device-width : 1024px){ /* Tablet */
+.tb{display:inherit!important;} .tb{display:inherit!important;} .lg{display:none!important;} .pc{display:none!important;} .pconly{display:none;} .mb{display:none!important;}
+.tb{display:inherit!important;}
+.notb{display:none!important;}
+.full{width:512px; position:absolute; box-sizing:border-box; left:50%; margin-left:-256px; display:block;  overflow-x:hidden;}
+}
+/*.................tabs end.......................*/
+/*.....................large screens..............*/
+/*
+@media only screen
+and (min-width : 1824px) {/*largescreens
+html{width:100%; background:#d2d2d2;}
+/*body{margin:auto 0px; max-width:1025px;}
+.pc{display:inherit!important;} .tb{display:none!important;} .lg{display:inherit!important;} .mb{display:none!important;}
+.pc{display:inherit!important;}
+.full{max-width:412px; margin:0px auto; overflow-x:hidden;}
+}
+....................largescreen ends................*/
+
+/* responsive ....................ends........................................*/
+
+.overall, .overall2, .overall3 {width:100%; height:100%;   box-sizing:border-box;  overflow-x:hidden; margin:0px;  }
+.truncate{width:98%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
