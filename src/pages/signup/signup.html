@@ -5,32 +5,65 @@
   Ionic pages and navigation.
 -->
 
-<ion-content class = "full light-blue-gradient">
-<ion-slides [options]="{onlyExternal: true}">    
+<ion-content class = "full blueish">
+<ion-slides>    
 <!---multiple form  for one page form-->
-<ion-slide class = "overall" >
-<div class = "top">
-  <div class = "logoholder"><span class = "nema"></span></div>
-  <div class = "toplogoname">
-    <span class = "light">Sign in to the NEMA App</span>
-    <span class = "white">National Emergency Response Management Agency</span>
-    <span class = "light">NEMA Nigeria</span>
-  </div>
+<ion-slide class = "overall">
+<div class = "topmax padtop tp2 "><div class = "top1 new-gradient"><i class = "fa fa-angle-left"></i> Lorem Ipsum</div>
+<div class = "greenvalues" (click) = "gotobar(1)">
+<div class = "l1">1</div>
+<div class = "m1">
+  <div class = "ima">
+  <div class = "div"><i class = "fa fa-circle-o"></i><i class = "fa fa-circle-o"></i><i class = "fa fa-circle-o"></i></div>
+  <div class = "div2"><i class = "fa fa-rss"></i></div>
 </div>
-<div class = "inputhold">
-  <div class = "input"><input type = "text" [(ngModel)] = "telephone"  placeholder = "Telephone or email"></div>  
-  <div class = "input"><input type = "password" [(ngModel)] = "password" placeholder = "Password"></div>
-  <div class = "mbo"><span></span><i *ngIf = "ssloading" class = "fa fa-spin fa fa-circle-o-notch"></i></div>
-  <div class = "mbo"><span>{{sgnerr}}</span><i *ngIf = "loading" class = "fa fa-spin fa fa-circle-o-notch"></i></div>  
-  <div class = "input yellow uppercase" (click) = "signin()">Sign In</div>
-  <div class =  "light mbsmall">Forgot Password</div>
-  <div class = "iconss" (click) = "gotobar(1)">
-   <i class = "fa fa-map-marker"></i>
-   <div class = "light tx">Sign up</div>
-    </div>
+<i class = " arrow fa fa-location-arrow "></i>
 </div>
+<div class = "r1">visit our website, is on this web hook and all</div>
+</div>
+</div>
+<div class = "greenvalues"  (click) = "gotobar(1)" >
+<div class = "topmax next">
+<div class = "l1">2</div>
+<div class = "m1">
+  <div class = "ima">
+  <div class = "div"><i class = "fa fa-circle-o"></i><i class = "fa fa-circle-o"></i><i class = "fa fa-circle-o"></i></div>
+  <div class = "div2"><i class = "fa fa-mobile"></i></div>
+</div>
+<i class = "arrow fa fa-location-arrow"></i>
+</div>
+<div class = "r1">Click on the mobile tab in the users profile</div>
+</div>
+</div>
+<div class = "greenvalues"  (click) = "gotobar(1)" >
+<div class = "topmax ">
+<div class = "l1">3</div>
+<div class = "m1">
+  <div class = "ima">
+  <div class = "div"><i class = "fa fa-circle-o"></i><i class = "fa fa-circle-o"></i><i class = "fa fa-circle-o"></i></div>
+  <div class = "div2"><i class = "fa fa-street-view"></i></div>
+</div>
+<i class = "fa fa-location-arrow arrow"></i>
+</div>
+<div class = "r1">Generate an Access key for your mobile phone</div>
+</div>
+</div>
+<div class = "greenvalues"  (click) = "gotobar(1)" >
+<div class = "topmax next">
+<div class = "l1">4</div>
+<div class = "m1">
+    <div class = "ima">
+  <div class = "div"><i class = "fa fa-circle-o"></i><i class = "fa fa-circle-o"></i><i class = "fa fa-circle-o"></i></div>
+  <div class = "div2"><i class = "fa fa-qrcode"></i></div>
+</div>
+<i class = "fa fa-location-arrow arrow"></i>
+</div>
+<div class = "r1">visit our website, is on this web hook and all</div>
+</div>
+</div>
+<div class = "topmax pd"><div class = "bbn"><i class = "fa fa-qrcode"></i><span>Kuzi this is button</span></div></div>
 </ion-slide>
-  <ion-slide class = "overall">
+  <ion-slide class = "overall"><!---slide-2-->
    <div class = "top">
      <div class = "largeicon"><ion-icon name = "contact"></ion-icon></div>
      <div class = "header">Bio Information</div>
@@ -42,8 +75,6 @@
        <div class = "help"><span>{{lastnameerr}}</span></div>
        <div class = "input"><input type = "text" [(ngModel)] = "telephone" placeholder = "telephone"></div>
        <div class = "help"><span>{{telephoneerr}}</span></div>
-       <div class = "input"><input type = "password" [(ngModel)] = "password" placeholder = "password"></div>
-       <div class = "help"><span> {{passworderr}}</span></div>
        <div class = "input"><input type = "email" [(ngModel)] = "email" placeholder = "email"></div>
         <div class = "mbo"><span>{{regerr}}</span><i *ngIf = "loading" class = "fa fa-spin fa fa-circle-o-notch"></i></div>       
         <div class = "inphold"><div class = "input whitebg fl col1"><span><i class = "fa fa-arrow-left"  (click) = "gotobar(0)"></i></span></div>

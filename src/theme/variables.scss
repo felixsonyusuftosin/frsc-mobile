@@ -274,7 +274,23 @@ $orange3:#B02506;
 $yellow1:#E7A213;
 $yellow2:#F2D71A;
 $yellow3:#F2D71A;
+$new1:#293B51;
+$new2:#1F2F42;
+$secgrad1:#1C2938;
+$secgrad2:#16222F;
 $SIDEMENU_TRANSPARENCY: rgba(255,255,255,0.4);
+.sec-gradient{
+    background: -webkit-gradient( right, $secgrad1, $secgrad2);
+    background: -o-linear-gradient(right , $secgrad1, $secgrad2);
+    background: -moz-linear-gradient(right , $secgrad1, $secgrad2);
+    background: linear-gradient(to right, $secgrad1, $secgrad2);
+}
+.new-gradient{
+    background: -webkit-gradient( right, $new1, $new2);
+    background: -o-linear-gradient(right ,  $new1, $new2);
+    background: -moz-linear-gradient(right ,  $new1, $new2);
+    background: linear-gradient(to right , $new1, $new2);
+}
 .light-blue-gradient{
     background: -webkit-gradient( top, $lightblue1, $lightblue3);
     background: -o-linear-gradient(bottom , $lightblue1, $lightblue3);
@@ -348,8 +364,7 @@ and (min-width : 1025px) { /* Desktop */
 /*......................desktop ends..................*/
 /*.......................mobile.....................*/
 @media only screen
-and (min-device-width : 320px) 
-
+and (min-device-width : 200px) 
 and (max-device-width : 480px) {/*mobile*/
 /*.col-xs{margin:0px;}*/
 .mb{display:none!important;} .tb{display:none!important;} .lg{display:none!important;} .pc{display:none!important;} .pconly{display:none;}
